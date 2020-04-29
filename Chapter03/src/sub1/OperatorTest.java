@@ -11,7 +11,7 @@ public class OperatorTest {
 		
 		int rs1 = num1 + num2;
 		int rs2 = num1 - num2;
-		int rs3 = num1 * num2;
+		int rs3 = num3 * num4;
 		int rs4 = num1 / num2;
 		int rs5 = num1 % num2;
 		int rs6 = 7 % num2;		
