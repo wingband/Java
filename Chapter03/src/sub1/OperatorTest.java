@@ -117,6 +117,7 @@ public class OperatorTest {
 		boolean r9 = !(var1 > var2); // NOT!
 		System.out.println("r9 : "+r9);
 		
-		
+		System.out.println("=====!=====");
+				
 	}
 }
