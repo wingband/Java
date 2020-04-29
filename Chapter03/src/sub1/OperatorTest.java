@@ -60,5 +60,28 @@ public class OperatorTest {
 		System.out.println(no2);
 		System.out.println(no3);
 		System.out.println(no4);
+		
+		
+		//비교연산자
+		int var1 = 1;
+		int var2 = 2;
+		
+		boolean result1 = (var1 > var2);
+		boolean result2 = (var1 < var2);
+		boolean result3 = (var1 <= var2);
+		boolean result4 = (var1 >= var2);
+		boolean result5 = (var1 == var2);
+		boolean result6 = (var1 != var2);
+		
+		
+		System.out.println("var1 is 1, var2 is 2, and");
+		System.out.println("var1 > var2 is " +result1);
+		System.out.println("var1 < var2 is " +result2);
+		System.out.println("var1 <= var2 is " +result3);
+		System.out.println("var1 >= var2 is " +result4);
+		System.out.println("var1 == var2 is " +result5);
+		System.out.println("var1 != var2 is " +result6);
+		
+		
 	}
 }
