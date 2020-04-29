@@ -3,6 +3,7 @@ package sub1;
 public class OperatorTest {
 
 	public static void main(String[] args) {
+		System.out.println("=====산술연산자=====");
 		// 산술연산자
 		int num1 = 1;
 		int num2 = 2;
@@ -24,6 +25,7 @@ public class OperatorTest {
 		System.out.println("re6 : "+rs6);
 		
 		//증감, 감소 연산자
+		System.out.println("=====증감, 감소연산자=====");
 		int n1 = 1;
 		int n2 = 2;
 		
@@ -36,6 +38,7 @@ public class OperatorTest {
 		System.out.println("n2의 값 : " +n2);
 		
 		//복합대입연산자
+		System.out.println("=====복합 대입연산자=====");
 		int no1 = 1;
 		int no2 = 2;
 		int no3 = 3;
@@ -63,6 +66,7 @@ public class OperatorTest {
 		
 		
 		//비교연산자
+		System.out.println("=====비교연산자=====");
 		int var1 = 1;
 		int var2 = 2;
 		
@@ -81,6 +85,37 @@ public class OperatorTest {
 		System.out.println("var1 >= var2 is " +result4);
 		System.out.println("var1 == var2 is " +result5);
 		System.out.println("var1 != var2 is " +result6);
+		
+		//논리연산자
+		System.out.println("=====논리연산자=====");
+		System.out.println("=====&&=====");
+		boolean r1 = (var1 > 0) && (var2 > 1); // 그리고!
+		boolean r2 = (var1 < 0) && (var2 > 1); // 그리고!
+		boolean r3 = (var1 > 0) && (var2 < 1); // 그리고!
+		boolean r4 = (var1 == 0) && (var2 > 1); // 그리고!
+		
+		
+		System.out.println("r1 : "+r1);
+		System.out.println("r2 : "+r2);
+		System.out.println("r3 : "+r3);
+		System.out.println("r4 : "+r4);
+		
+		
+		System.out.println("=====||=====");
+		boolean r5 = (var1 > 0) || (var2 > 1); // 또는!
+		boolean r6 = (var1 < 0) || (var2 > 1); // 
+		boolean r7 = (var1 > 0) || (var2 < 1); // 
+		boolean r8 = (var1 == 0) || (var2 > 1); //
+		
+		System.out.println("r5 : "+r5);
+		System.out.println("r6 : "+r6);
+		System.out.println("r7 : "+r7);
+		System.out.println("r8 : "+r8);
+		
+		System.out.println("=====!=====");
+		
+		boolean r9 = !(var1 > var2); // NOT!
+		System.out.println("r9 : "+r9);
 		
 		
 	}
