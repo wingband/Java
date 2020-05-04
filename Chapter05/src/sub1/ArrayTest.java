@@ -48,8 +48,8 @@ public class ArrayTest {
 		//배열의 반복문
 		
 		int l;
-		for (l=0; l<5; l++) {
-			if(l < 4) {
+		for (l=0; l<people.length; l++) {
+			if(l < people.length-1) {
 				System.out.print(people[l]+", ");	
 			}
 			else 

@@ -18,6 +18,8 @@ public class MultiArrayTest {
 		}
 		System.out.println(sum);
 		System.out.println("=============");
+		
+		
 		// 2차원 배열
 		int arr2d[][] = {{1,2,3,4},{5,6,7,8},{9,10,11,12}};
 		System.out.println("배열 arr2d의  1행 1열의 원소는 :"+arr2d[0][0]);
@@ -45,11 +47,24 @@ public class MultiArrayTest {
 			
 		}
 		}
-		
-		
+		System.out.println("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\");	
 		// 3차원 배열
 		
+		int arr3d[][][] = {{{1,2,3,4},{5,6,7,8},{9,10,11,12}}, {{1,2,3,4},{5,6,7,8},{9,10,11,12}}, {{1,2,3,4},{5,6,7,8},{9,10,11,12}}};
 		
+		int o,p,q;
+		for(o = 0; o<arr3d.length; o++) {
+			for(p = 0; p<arr3d[o].length; p++) {
+				for(q = 0; q<arr3d[o][p].length; q++){
+					System.out.println("배열 arr3d의"+(o+1)+"번째 "+(p+1)+"행 "+(q+1)+"열의 원소는 "+arr3d[o][p][q]+"입니다.");
+//					System.out.println(arr3d[o].length);
+				}
+//				System.out.println(arr3d[p].length);}
+			
+		}
+//		System.out.println(arr3d.length);
 	}
 
 }
+}
+
