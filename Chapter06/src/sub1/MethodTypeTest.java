@@ -68,24 +68,12 @@ public class MethodTypeTest {
 		
 	}
 	
-	
 	// type 4 : 매개변수 x , 리턴값 x
 	public static void type4() {
 		double y = type1(0.1);
 		System.out.println("type1(0.1) : "+y);
 	}
 	
-	
-//	
-//	public static int gugudan(int a) {
-//		
-//		int sum = 0;
-//		for(int i=1; i<10; i++) {
-//			sum = i * a;
-//		}
-//		return sum;
-//	}
-//	
 	
 	public static void gugudan2(int a) {
 		

@@ -30,8 +30,8 @@ public class MethodOverloadTest {
 		
 	}
 	
-	public static String add(String name) {
-		return name+"´Ô ¹Ý°©½À´Ï´Ù.";
+	public static String add(String a) {
+		return a+"´Ô ¹Ý°©½À´Ï´Ù.";
 		
 		
 	}
