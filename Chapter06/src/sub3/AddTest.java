@@ -14,22 +14,24 @@ public class AddTest {
 		//¸ÕÀú ¼±¾ğ
 		int arr[] = {10,20,30};
 		
+		//////
+		Adder abc = new Adder(100);
 		
-		Adder a = new Adder(100);
+		////////
 		
-		a.add(100);
-		System.out.println("°´Ã¼ aÀÇ ¸â¹ö x :"+a.getX());
+		abc.add(100);
+		System.out.println("°´Ã¼ aÀÇ ¸â¹ö x :"+abc.getX());
 		
-		a.add(a);
-		System.out.println("°´Ã¼ aÀÇ ¸â¹ö x : "+a.getX());
+		abc.add(abc);
+		System.out.println("°´Ã¼ aÀÇ ¸â¹ö x : "+abc.getX());
 		
 		// ¿©±â¼­ ÇÔ¼ö°¡ »ç¶óÁü ³¡³µ±â¶§¹®¿¡
 		
-		a.add(arr);
+		abc.add(arr);
 		System.out.println("¹è¿­ arrÀÇ 1¹øÂ° ¿ø¼Ò : "+arr[0]);
 		
-		a.addNew(a);
-		System.out.println("°´Ã¼ aÀÇ ¸â¹ö x : "+a.getX());
+		abc.addNew(abc);
+		System.out.println("°´Ã¼ aÀÇ ¸â¹ö x : "+abc.getX());
 	}
 	
 	

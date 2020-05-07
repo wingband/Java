@@ -119,5 +119,11 @@ public class OperatorTest {
 		
 		System.out.println("=====!=====");
 				
+		
+		int num = 0;
+		int result;
+		result = ++num;
+		System.out.println(result);
+				
 	}
 }

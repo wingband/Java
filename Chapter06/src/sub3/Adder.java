@@ -6,11 +6,12 @@ public class Adder {
 	//public int x; 가 맞는데 안해도 됨, 앞에 선언을 안하면 public이다 생각하면됨
 	private int x;
 
-	/////////////////////////////////////////////////
 	//생성자 -> 공식이다 외워!
 	Adder(int x){
 		this.x =x;
 	}
+	///////////////////////////////////////////////
+	
 	
 	/////////////////////////////////////////////////
 	//getter, setter
@@ -34,8 +35,8 @@ public class Adder {
 		this.x = x+50;
 		}
 	
-	public void add(Adder a1) {
-		a1.x +=40;
+	public void add(Adder a) {
+		a.x +=40;
 	}
 	
 	//배열, 참조변수
@@ -43,10 +44,6 @@ public class Adder {
 		arr[0]++;
 	}
 	
-	
-
-	
-		
 	public void addNew(Adder a2) {
 		a2 = new Adder(1);
 	}
