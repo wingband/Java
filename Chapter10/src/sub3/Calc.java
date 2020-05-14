@@ -32,7 +32,7 @@ public class Calc {
 		
 		
 		// 해당 메서드는 에러가 발생할수 있다는 가능성을 throws 선언을 통해 호출하는 쪽으로 알림
-		public int div(int x, int y) throws Exception {
+		public int div(int x, int y) throws Exception{
 			
 			if(y < 0) {
 			//에러가 발생할때 메서드를 호출하는 쪽으로 에러를 던진다
@@ -41,7 +41,11 @@ public class Calc {
 			}else if (y==1) {
 				Exception e = new Exception("y는 1이 되면 안된다.");
 				throw e;
+			}else if (y==0) {
+				Exception e = new Exception("y는 0이 되면 안된다.");
+				throw e;
 			}
+			
 			
 			return x / y;
 		} 

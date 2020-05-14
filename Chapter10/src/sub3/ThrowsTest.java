@@ -16,7 +16,7 @@ public class ThrowsTest {
 
 		//에러가 발생할 throws 선언된 메서드를 호출하는 쪽에서는 예외처리(try-catch)를 해야함
 		//또는 다시 throws 선언으로 main을 호출하는 자바 JVM으로 예외를 던짐.
-		int r4 = c.div(4, 1);
+		int r4 = c.div(4, 0);
 		
 		
 		
