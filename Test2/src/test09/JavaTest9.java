@@ -14,6 +14,8 @@ public class JavaTest9 {
 		
 		
 	}
+
+
 	
 	public void draw(Shape obj) {
 		obj.draw();
