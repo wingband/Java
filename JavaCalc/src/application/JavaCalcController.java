@@ -28,11 +28,11 @@ public class JavaCalcController implements Initializable{
 	@FXML private Button btnMinus;
 	@FXML private Button btnPlus;
 	@FXML private Button btnEqual;
-	 @FXML private TextField tfNum1, tfNum2;
+	
 	private int operator;
 	private int firstNum;
 	private int secondNum;
-
+	private boolean isFirst=true;
 	
 	
 
@@ -60,77 +60,95 @@ public class JavaCalcController implements Initializable{
 		
 	} // initialize end
 	
+	public void setNum(int num) {
+		txtDisp.setText(""+num);
+		
+		
+		if(isFirst) {
+			txtDisp.setText(""+num);
+			isFirst=false;
+		}else {
+			String getNum = txtDisp.getText();
+			String totNum = getNum + num;
+			
+			txtDisp.setText(totNum);
+		}
+		
+	}
+	
 	public void btn0Handler() {
-		txtDisp.setText("0");
-		if(firstNum != 0) {
-			secondNum = 0;
-		}else {
-			firstNum = 0;
-		}
+		setNum(0);
 	}
 	
 		
-	
-	
-	public void btn1Handler() {
-		txtDisp.setText("1");
-		
-		if(firstNum == 0) {
-			secondNum = 1;
-		}else {
-			firstNum = 1;
+	public void btn1Handler() {	
+		setNum(1);
 		}
 		
-	}
+	
 	public void btn2Handler() {
-		txtDisp.setText("2");
-		secondNum = 2;
+		setNum(2);
 		
 	}
 	public void btn3Handler() {
-
+		setNum(3);
 	}
 	public void btn4Handler() {
-
+		setNum(4);
 	}
 	public void btn5Handler() {
-
+		setNum(5);
 	}
 	public void btn6Handler() {
-
+		setNum(6);
 	}
 	public void btn7Handler() {
-
+		setNum(7);
 	}
 	public void btn8Handler() {
-
+		setNum(8);
 	}
 	public void btn9Handler() {
-
+		setNum(9);
 	}
 
 	
+	
+	
+	
+	
+	
+	
+	public void setOperator(int operator) {
+		this.operator = operator;
+		
+		String getNum = txtDisp.getText();
+		firstNum = Integer.parseInt(getNum);
+		
+		isFirst = true;
+	}
+	
 
 	public void btnDivHandler() {
-		operator = 1;
-		System.out.println("/");
+		setOperator(1);
+		
 	}
 	public void btnMultiHandler() {
-		operator = 2;
-		System.out.println("*");
+		setOperator(2);
 		
 	}
 	public void btnMinusHandler() {
-		operator = 3;
-		System.out.println("-");
+		setOperator(3);
 	}
 	public void btnPlusHandler() {
-		operator = 4;
-		System.out.println("+");
-		
+		setOperator(4);
 	}
+	
+	
+	
 	public void btnEqualHandler() {
-
+		String getNum = txtDisp.getText();
+		secondNum = Integer.parseInt(getNum);
         
         
 		int result = 0;
@@ -160,6 +178,7 @@ public class JavaCalcController implements Initializable{
 		operator = 0;
 		firstNum = 0;
 		secondNum = 0;
+		isFirst=true;
 		
 		
 	}
